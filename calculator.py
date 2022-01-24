@@ -13,8 +13,8 @@ class Caculator(Resource):
         parser.add_argument('y', type=str)
         # parse 'name'
         cal = parser.parse_args().get('cal')
-        x = parser.parse_args().get('x')
-        y = parser.parse_args().get('y')
+        x = int(parser.parse_args().get('x'))
+        y = int(parser.parse_args().get('y'))
                 # make json from greeting string
         ret = 0        
         if cal=='add':
